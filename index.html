@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PORTFOLIO - Adithyan.S</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #9aa4b2;
+      --accent: #7c5cff;
+      --glass: rgba(255, 255, 255, 0.04)
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, Arial;
+      background: linear-gradient(180deg, #071226 0%, #0f1724 100%);
+      color: #e6eef8
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 36px auto;
+      padding: 28px
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px
+    }
+
+    .avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), #39d0ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 14px;
+      font-weight: 600
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 28px;
+      margin-top: 34px
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      padding: 22px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6)
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 0
+    }
+
+    p.lead {
+      color: var(--muted);
+      margin-top: 8px
+    }
+
+    .badges {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px
+    }
+
+    .badge {
+      background: var(--glass);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      color: var(--muted)
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px
+    }
+
+    .skill {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 8px 10px;
+      border-radius: 10px
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 16px
+    }
+
+    .project {
+      padding: 14px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px
+    }
+
+    footer {
+      margin-top: 34px;
+      text-align: center;
+      color: var(--muted)
+    }
+
+    .socials {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 10px
+    }
+
+    .icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.03);
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    a.icon svg {
+      display: block
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      background: transparent;
+      color: inherit
+    }
+
+    button {
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, var(--accent), #39d0ff);
+      border: none;
+      color: #051127;
+      font-weight: 700
+    }
+
+    @media (max-width:880px) {
+      .hero {
+        grid-template-columns: 1fr
+      }
+
+      .container {
+        margin: 18px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">YN</div>
+        <div>
+          <div style="font-weight:800">YOUR NAME</div>
+          <div style="font-size:12px;color:var(--muted)">YOUR TITLE / SHORT TAGLINE</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="card">
+        <h1>DEMO HERO TITLE</h1>
+        <p class="lead">Demo intro text: Add a short descriptive paragraph about what you do, who you are, and what
+          you're looking for. Replace this with your exact summary.</p>
+        <div class="badges">
+          <div class="badge">Open to work</div>
+          <div class="badge">Available for freelance</div>
+        </div>
+
+        <h3 style="margin-top:18px">Skills</h3>
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">React</div>
+          <div class="skill">Python</div>
+        </div>
+
+        <h3 style="margin-top:18px">Highlighted Projects</h3>
+        <div class="projects" id="projects">
+          <div class="project">
+            <strong>Demo Project 1</strong>
+            <p style="color:var(--muted);font-size:13px">Short demo description. Technologies: HTML, CSS. Replace with
+              details and links.</p>
+            <div style="margin-top:8px"><a href="#" style="color:var(--accent);font-weight:700">Live demo</a> • <a
+                href="#" style="color:var(--muted)">GitHub</a></div>
+          </div>
+
+          <div class="project">
+            <strong>Demo Project 2</strong>
+            <p style="color:var(--muted);font-size:13px">Short demo description. Technologies: JS, API. Replace with
+              details and links.</p>
+            <div style="margin-top:8px"><a href="#" style="color:var(--accent);font-weight:700">Live demo</a> • <a
+                href="#" style="color:var(--muted)">GitHub</a></div>
+          </div>
+
+          <div class="project">
+            <strong>Demo Project 3</strong>
+            <p style="color:var(--muted);font-size:13px">Short demo description. Replace with details and links.</p>
+            <div style="margin-top:8px"><a href="#" style="color:var(--accent);font-weight:700">Live demo</a> • <a
+                href="#" style="color:var(--muted)">GitHub</a></div>
+          </div>
+        </div>
+
+      </section>
+
+      <aside style="display:flex;flex-direction:column;gap:14px">
+        <div class="card">
+          <h3 id="about">About</h3>
+          <p style="color:var(--muted)">Demo about text: Brief bio, background, interests, and what you want people to
+            know. Replace with your full bio.</p>
+
+          <h4 style="margin-top:12px">Contact</h4>
+          <p style="color:var(--muted);font-size:14px">Email: <a href="mailto:you@example.com"
+              style="color:var(--accent);font-weight:700">you@example.com</a></p>
+
+          <div style="margin-top:8px">
+            <strong style="font-size:13px">Location</strong>
+            <div style="color:var(--muted);font-size:13px">City, Country</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Experience</h3>
+          <div style="font-size:14px;margin-top:8px">
+            <strong>Demo Company</strong>
+            <div style="color:var(--muted);font-size:13px">Role • 2022 - Present</div>
+            <p style="color:var(--muted);font-size:13px;margin-top:6px">Short demo responsibilities and achievements.
+              Replace with real info.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Education</h3>
+          <div style="font-size:14px;margin-top:8px">
+            <strong>Demo University</strong>
+            <div style="color:var(--muted);font-size:13px">Degree • 2019 - 2023</div>
+            <p style="color:var(--muted);font-size:13px;margin-top:6px">Demo achievements and notes.</p>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <section class="card two-col" style="margin-top:18px">
+      <div>
+        <h3>Services</h3>
+        <p style="color:var(--muted)">Demo list of services: Web Development, UI/UX, Automation, Consulting.</p>
+
+        <h3 style="margin-top:12px">Tools & Tech</h3>
+        <div class="skills" style="margin-top:8px">
+          <div class="skill">VSCode</div>
+          <div class="skill">Figma</div>
+          <div class="skill">Git</div>
+          <div class="skill">Docker</div>
+        </div>
+      </div>
+
+      <div id="contact" class="card">
+        <h3>Contact Me</h3>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Demo: replace with real form or mailto');">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea rows="4" placeholder="Message" required></textarea>
+          <button type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div style="font-weight:700">Connect with me</div>
+      <div class="socials">
+        <!-- Replace href="#" with your social links -->
+        <a class="icon" href="#" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 .5C5.73.5.76 5.47.76 11.74c0 4.9 3.18 9.06 7.59 10.53.56.1.76-.24.76-.53 0-.26-.01-1-.01-1.93-3.08.67-3.73-1.48-3.73-1.48-.5-1.28-1.22-1.62-1.22-1.62-.99-.68.08-.67.08-.67 1.1.08 1.67 1.13 1.67 1.13.97 1.66 2.55 1.18 3.17.9.1-.7.38-1.18.69-1.45-2.46-.28-5.05-1.23-5.05-5.47 0-1.21.43-2.2 1.14-2.98-.12-.28-.5-1.4.11-2.93 0 0 .94-.3 3.09 1.13.9-.25 1.86-.38 2.82-.38.96 0 1.92.13 2.82.38 2.15-1.43 3.09-1.13 3.09-1.13.61 1.53.23 2.65.11 2.93.71.78 1.14 1.77 1.14 2.98 0 4.25-2.6 5.19-5.07 5.47.39.34.73 1.01.73 2.04 0 1.47-.01 2.66-.01 3.02 0 .29.2.64.77.53C19.06 20.8 22.24 16.64 22.24 11.74 22.24 5.47 17.27.5 12 .5z"
+              fill="#e6eef8" />
+          </svg>
+        </a>
+
+        <a class="icon" href="#" title="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 8.88h4v12H3v-12zM9.5 8.88h3.83v1.64h.06c.53-1 1.82-2.06 3.76-2.06C21.2 8.46 22 10.8 22 14.1v6.28h-4v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.68h-4v-12z"
+              fill="#e6eef8" />
+          </svg>
+        </a>
+
+        <a class="icon" href="#" title="Twitter / X">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22 5.92c-.64.28-1.32.48-2.04.57a3.55 3.55 0 001.56-1.96 7.1 7.1 0 01-2.25.86 3.53 3.53 0 00-6.02 3.22A10.03 10.03 0 013 4.92a3.53 3.53 0 001.09 4.71c-.53-.02-1.03-.16-1.47-.4v.04c0 1.7 1.21 3.12 2.82 3.44-.48.13-.98.16-1.5.06.42 1.3 1.62 2.24 3.04 2.27A7.1 7.1 0 012 19.54 10 10 0 007.29 21c6.07 0 9.39-5.03 9.39-9.4v-.43c.64-.46 1.2-1.04 1.62-1.7a6.85 6.85 0 01-1.32.36z"
+              fill="#e6eef8" />
+          </svg>
+        </a>
+
+      </div>
+      <div style="margin-top:10px;color:var(--muted);font-size:13px">© YOUR NAME • Built with ❤️ • Demo template</div>
+    </footer>
+  </div>
+</body>
+
+</html>
